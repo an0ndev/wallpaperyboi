@@ -4,7 +4,10 @@ Mojave dynamic wallpaper for Windows/Linux. (beware, 3am jank present)
 
 ## Setup
 - Windows
-  - (untested, todo)
+  - install recent Python, tested on 3.10.2
+  - dependencies: `pip install geocoder astropy`
+  - add shortcut to `<Python folder>\pythonw.exe <repo folder>\main.py` in `%AppData%\Microsoft\Windows\Start Menu\Programs\Startup`
+  - profit
 - Linux (GNOME)
   - dependencies: `pip install geocoder astropy PyGObject`
   - `chmod +x main.py` (shebang is already present)
