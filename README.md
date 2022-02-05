@@ -11,6 +11,9 @@ Mojave dynamic wallpaper for Windows/Linux. (beware, 3am jank present)
   - add as startup application
   - profit
 
+## Update frequency
+The number of seconds between update is stored in `<home folder>/.wallpaperyboi/delay_seconds.txt`. (restart app after modifying)
+
 ## References
 - https://gist.github.com/ole/6b6b5ef20fbec12e9227075e20c6e6ef
 - http://files.rb.gd/mojave_dynamic.zip
