@@ -20,7 +20,7 @@ def file_path_for (image_index: ImageIndex) -> FilePath:
 def get_positions () -> dict [FilePath: Position]:
     import plistlib
 
-    with open ("Solar.plist", "rb") as data_file:
+    with open (pathlib.Path (__file__).parent / "Solar.plist", "rb") as data_file:
         solar_data = plistlib.load (data_file)
 
     return {file_path_for (image_info ["i"]): (image_info ["a"], image_info ["z"]) for image_info in solar_data ["si"]}
